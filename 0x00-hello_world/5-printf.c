@@ -5,7 +5,7 @@
  * but the outcome is the piece of art,
  * Return:Always 0 is exicted,otherwise return a non zero int
  */
-int main(void)
+intmain(void)
 {
 	printf("with proper grammar,but the outcome is a piece of art,\n")
 	return (0);
