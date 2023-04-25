@@ -1,17 +1,17 @@
 #include<stdio.h>
 /**
  * main - Entry point
- * Description: 'print numbers of base 10'
+ * Description: 'print numbers from 0 to 9'
  * Return: Always 0
  */
 int main(void)
 {
-	int a;
+	int m;
 
-	for (a =0; a <= 9; a++)
+	for (m = 0; m < 9; m++)
 	{
-		printf("%d", d);
+		printf("%d", m);
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
