@@ -1,7 +1,8 @@
-#include<stdio.h>                        /**                                       * main - Entry point                     * Description: 'print numbers with base  * 10 using putchar'
+#include<stdio.h>                        /**                                       * main - Entry point                     * Description: 'print numbers 0 to 9'
  * Return: Always 0                       */                                      int main(void)                           {
-        int d;
-                                                 for(d = 0; d <= 9; d++)                  {
-                putchar(n + 48);
-        }
+        int b;
+                                                 for (b = 48; b < 58; b++)
+						 { 
+							 putchar(b);
+						 }
         putchar('\n');                           return (0);                      }
