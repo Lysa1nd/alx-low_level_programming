@@ -1,31 +1,33 @@
-#include<stdio.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
 
 /**
- * main - shows all different combined three digit numbers
- * Return: Always 0 (success)
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
+
 int main(void)
 {
-	int t, u, v;
+	int digit1, digit2, digit3;
 
-	for (t = 48, t < 58, t++)
+	for (digit1 = 0; digit1 < 8; digit1++)
 	{
-	for (u = 49, u < 58, u++) 
+		for (digit2 = digit1 + 1; digit2 < 9; digit2++)
 		{
-			for (v = 50, v < 58, v++)
-		{
-			if (v >u && u >t)
+			for (digit3 = digit2 + 1; digit3 < 10; digit3++)
 			{
-				putchar(t);
-				putchar(u);
-				putchar(v);
-				if (t != 55 || u != 56)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+				putchar((digit1 % 10) + '0');
+				putchar((digit2 % 10) + '0');
+				putchar((digit3 % 10) + '0');
+
+				if (digit1 == 7 && digit2 == 8 && digit3 == 9)
+					continue;
+
+				putchar(',');
+				putchar(' ');
 			}
-		}
 		}
 	}
 	putchar('\n');
