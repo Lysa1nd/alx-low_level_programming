@@ -2,13 +2,18 @@
 #include <stdio.h>
 
 /**
- * main - prints the name of a program
+ * main - prints all arguements it receives
  * @argc: number of arguements
  * @argv: array of arguements
  * Return: Always 0 (Success)
  */
-int main(int argc__attribute__((unused)), char *argv[])
+int main(int argc, char *argv[])
 {
-	printf("%s\n", *argv);
+	int i;
+
+	for (i = 0; i < argc; i++)
+	{
+		printf("%s\n", argv[i]);
+	}
 	return (0);
 }
