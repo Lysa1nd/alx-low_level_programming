@@ -1,8 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
-
 /**
- * agrstostr - main Entry
+ * argstostr - main entry
  * @ac: int input
  * @av: double pointer array
  * Return: 0
@@ -20,7 +19,6 @@ char *argstostr(int ac, char **av)
 		for (n = 0; av[i][n]; n++)
 			l++;
 	}
-
 	l += ac;
 
 	str = malloc(sizeof(char) * l + 1);
@@ -28,15 +26,15 @@ char *argstostr(int ac, char **av)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
-		for (n = 0; av[i][n]; n++)
-		{
-			str[r] = av[i][n];
-			r++;
-		}
-		if (str[r] == '\0')
-		{
-			str[r++] = '\n';
-		}
+	for (n = 0; av[i][n]; n++)
+	{
+		str[r] = av[i][n];
+		r++;
+	}
+	if (str[r] == '\0')
+	{
+		str[r++] = '\n';
+	}
 	}
 	return (str);
 }
