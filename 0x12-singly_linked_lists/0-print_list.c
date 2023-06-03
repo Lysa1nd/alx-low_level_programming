@@ -4,11 +4,11 @@
 
 /**
  * print_list - prints all elements of a
- * list_t*h
- * @str: string
- * @next: points to the next code
- * @format: character string
- * Return: the number of nodes
+ * list_t
+ * @h: pointer to the head of the linked
+ * list
+ * Return: the number of elements in a
+ * linked list
  */
 size_t print_list(const list_t *h)
 {
@@ -29,4 +29,4 @@ size_t print_list(const list_t *h)
 	h = h->next;
 	}
 	return (j);
-}	
+}
