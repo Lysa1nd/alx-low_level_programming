@@ -40,8 +40,6 @@ close(fd);
 write_ret = write(STDOUT_FILENO, buffer, read_ret);
 free(buffer);
 if (write_ret != read_ret)
-{
 return (0);
 return (read_ret);
-}
 }
